@@ -1,7 +1,9 @@
 ---
 
 - name: Setup CA with SSL
-  hosts: localmachine
+  hosts:
+       - 192.168.56.110
+       - 192.168.56.112
   become: true
   tasks:
     - name: Update the package cache
